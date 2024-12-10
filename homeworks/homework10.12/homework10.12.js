@@ -1,0 +1,17 @@
+const div1 = document.getElementById('div1')
+div1.textContent = 'Welcome to the World of DOM!'
+div1.style.color = 'red'
+div1.style.fontSize= '50px'
+const div2 = document.getElementById('div2')
+div2.textContent = 'Did you know? JavaScript can make webpages interactive.'
+div2.style.fontSize= '20px'
+const div3 = document.getElementById('div3')
+div3.textContent = 'Learning the DOM is your first step to web magic!'
+div3.style.fontSize= '20px'
+const div4 = document.getElementById('div4')
+div4.textContent = 'Fun fact: DOM stands for Document Object Model.'
+div4.style.color = 'green'
+const div5 = document.getElementById('div5')
+div5.textContent = 'My name is "Your name"'
+div5.style.backgroundColor = 'grey'
+div5.style.border = '5px'
