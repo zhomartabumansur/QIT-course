@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+            background-color: darkolivegreen;
+        }
+
+        .button{
+            padding: 25px;
+            border-radius: 10px;
+            margin-left: 180px;
+            margin-top: 170px;
+        }
+
+        .countainer {
+            width: 500px;
+            height: 250px;
+            margin-left: 450px;
+            margin-top: 200px;
+            background-color: rgb(76, 76, 76);
+            border-radius: 15px;
+        }
+    </style>
+
+    <div class="countainer">
+        <button class="button" id="button">Деректерді алу</button>
+    </div>
+
+    <script src="js.js">
+        const apiKey = 'https://jsonplaceholder.typicode.com/todos'
+        const button = document.getElementById("button")
+
+        function button() {
+            fetch(apiKey)
+            .then(response => response.json())
+            .then(data => {`
+                <h1>Question:${data.title}</h1>
+            `})
+            .catch(error => {
+                console.log("Қате шықты:", error)
+            })
+        }
+
+        button.addEventListener("click", (button) =>  {
+            console.log("Деректер алынуда...") 
+        }) 
+
+    </script>
+</body>
+</html>
