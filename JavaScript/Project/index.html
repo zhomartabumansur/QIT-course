@@ -7,78 +7,160 @@
 </head>
 <body>
     <style>
-        body {
-            margin: 0; 
-            padding: 0;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: gainsboro;
+    }
+    
+    .koenigseggsuret {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
 
-        .koenigseggsuret {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-        }
-        
-        .name1 {
-            position: absolute;
-            width: 350px;
-            height: 130px;
-            bottom: 500px;
-            left: 140px;
-            object-fit: cover;
-        }
+    .name1, .name2 {
+        position: absolute;
+        object-fit: cover;
+    }
 
-        .logok1 {
-            position: absolute;
-            width: 250px;
-            bottom: 560px;
-            left: 90px;
-            mix-blend-mode: multiply;
-        }
+    .name1 {
+        width: 350px;
+        height: 130px;
+        bottom: 500px;
+        left: 140px;
+    }
 
-        .name2 {
-            position: absolute;
-            width: 300px;
-            top: 870px;
-            left: 140px;
-            object-fit: cover;
-        }
+    .logok1 {
+        position: absolute;
+        width: 250px;
+        bottom: 560px;
+        left: 90px;
+        mix-blend-mode: multiply;
+    }
 
-        .koenigsegg3 h1 {
-            font-size: 50px;
-            position: absolute;
-            text-transform: uppercase;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            top: 1830px;
-            left: 580px;
-        }
+    .name2 {
+        width: 300px;
+        top: 870px;
+        left: 140px;
+    }
 
-        .betweenimg {
-            width: 100%;
-            height: 90px;
-            background-color: black;
-        }
+    .koenigsegg3 h1 {
+        font-size: 50px;
+        position: absolute;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        top: 1950px;
+        left: 580px;
+    }
+
+    .betweenimg {
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .betweenimg h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cars {
+        width: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        margin-top: 40px;
+        align-items: center;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        margin-left: 440px;
+        margin-bottom: 200px;
+    }
+
+    .cars a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .cars a:hover {
+        font-size: 30px;
+    }
+
+    button {
+        width: 150px;
+        height: 60px;  
+        border: 3px solid #315cfd;  
+        border-radius: 45px; 
+        transition: all 0.3s; 
+        cursor: pointer;
+        background: white;
+        font-size: 1.2em;
+        font-weight: 550;
+        margin-left: 630px;
+        margin-top: 10px;
+    }
+    
+    button:hover {
+        background: #315cfd;
+        color: white;
+        font-size: 1.5em;
+    }
+
     </style>
-
-    <div class="background1">
+    <div class="background">
         <div class="koenigsegg1">
-            <img class="koenigseggsuret" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2022-04/Pre-series%20Jesko%202.jpg?h=053a0b09&itok=uNbJxASB" alt="">
+            <a href="../Project/attack.html"><img class="koenigseggsuret" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2022-04/Pre-series%20Jesko%202.jpg?h=053a0b09&itok=uNbJxASB" alt=""></a>
             <img class="name1" src="https://www.mpadeco.com/thumb/200x200/zc/1/src//sites/mpadeco/files/cart/78e32cbec11ef4134c99d519e9b1362c.png" alt="">
         </div>
     </div>
-    <div class="betweenimg"></div>
-    <div class="background2">
+    <div class="betweenimg">
+        <div>
+            <h1>Стоимость - $3,000,000</h1>
+            <h1>Мощность двигателя — 1,280 л.с</h1>
+            <h1>Максимальная скорость - 500 км/ч</h1>
+            <button>Buy</button>
+        </div>
+    </div>
+    <div class="background">
         <div class="koenigsegg2">
-            <img class="koenigseggsuret" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2024-02/CC850%20in%20the%20desert%20Gradient.png?h=d7a1b779&itok=wXLIn7VA" alt="">
+            <a href="../Project/cc850.html"><img class="koenigseggsuret" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2024-02/CC850%20in%20the%20desert%20Gradient.png?h=d7a1b779&itok=wXLIn7VA" alt=""></a>
             <img class="name2" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/2022-08/CC850_w_logo.svg" alt="">
         </div>
     </div>
-    <div class="betweenimg"></div>
-    <div class="background3">
+    <div class="betweenimg">
+        <div>
+            <h1>Стоимость - $3,650,000</h1>
+            <h1>Мощность двигателя — 1,185 л.с</h1>
+            <h1>Время разгона до 100 км/ч — 2,5 секунды, Максимальная скорость - 450 км/ч</h1>
+            <button>Buy</button>
+        </div>
+    </div>
+    <div class="background">
         <div class="koenigsegg3">
             <img class="koenigseggsuret" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1000/azure/2024-02/94c29aca8e7e6b5d_org%20%281%29.png?h=a8e100de&itok=1dvWKPUc" alt="">
             <h1 class="name3">Gemera</h1>
         </div>
+    </div>
+    <div class="betweenimg">
+        <div>
+            <h1>Стоимость - $3,000,000</h1>
+            <h1>Мощность двигателя — 1723 л.с</h1>
+            <h1>Время разгона до 100 км/ч — 1,9 секунды, до 400 км/ч — чуть менее 20 секунд</h1>
+            <button>Buy</button>
+        </div>
+    </div>
+
+    <div class="cars">
+        <h1>Еще другие спорткары</h1> 
+        <a href="../Project/Lam.html">Lamborgini ,</a>
+        <a href="../Project/fer.html">Ferrari</a>
     </div>
 </body>
 </html>
